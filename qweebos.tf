@@ -13,4 +13,8 @@ resource "hcloud_server" "qweebos" {
   depends_on = [
     hcloud_network_subnet.default-subnet
   ]
+
+  lifecycle {
+    ignore_changes = [ssh_keys]
+  }
 }
