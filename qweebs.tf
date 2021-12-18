@@ -10,6 +10,8 @@ resource "hcloud_server" "qweebs" {
     ip         = "10.0.1.5"
   }
 
+  firewall_ids = [hcloud_firewall.default_web.id]
+
   depends_on = [
     hcloud_network_subnet.default-subnet
   ]
@@ -18,3 +20,4 @@ resource "hcloud_server" "qweebs" {
     ignore_changes = [ssh_keys]
   }
 }
+
