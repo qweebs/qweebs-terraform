@@ -1,3 +1,3 @@
-output "IP_qweebos_dot_com" {
-  value = hcloud_server.qweebos.ipv4_address
+output "IP_qweebs_dot_com" {
+  value = hcloud_server.qweebs.ipv4_address
 }

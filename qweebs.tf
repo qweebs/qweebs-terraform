@@ -1,5 +1,5 @@
-resource "hcloud_server" "qweebos" {
-  name        = "qweebos.com"
+resource "hcloud_server" "qweebs" {
+  name        = "qweebs.com"
   server_type = "cx11"
   image       = "debian-11"
   location    = "fsn1"
